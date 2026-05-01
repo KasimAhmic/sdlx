@@ -16,6 +16,8 @@ namespace SDL {
         Surface(const Surface&) = delete;
         Surface& operator=(const Surface&) = delete;
 
+        [[nodiscard]] SDL_Surface* get() const { return this->surface; }
+
     private:
         SDL_Surface* surface;
     };

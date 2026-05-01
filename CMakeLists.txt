@@ -27,8 +27,10 @@ add_executable(${PROJECT_NAME}
         src/init.cpp
         src/init.hpp
         src/init_flag.hpp
-        src/util.hpp
         src/internal/enum.hpp
+        src/texture.cpp
+        src/texture.hpp
+        src/blend_mode.hpp
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE SDL3::SDL3)
